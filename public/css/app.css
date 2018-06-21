@@ -97,7 +97,8 @@
     background-color: #3b95e3;
 }
 .nav-arrow {
-    float: left;
+    position: absolute;
+    left: 10px;
 }
 /*登录注册表单样式*/
 #formInfo {
