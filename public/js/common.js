@@ -1,7 +1,7 @@
 /**
  * Created by HIAPAD on 2018/6/21.
  */
-var path = '/';//设置静态文件的引用地址
+var path = '/public/';//设置静态文件的引用地址
 document.write('<link rel="stylesheet" href="'+path+'jquery-weui/dist/lib/weui.css">');
 document.write('<link rel="stylesheet" href="'+path+'jquery-weui/dist/css/jquery-weui.css">');
 document.write('<link rel="stylesheet" href="'+path+'css/app.css">');
