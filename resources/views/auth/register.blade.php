@@ -48,7 +48,7 @@
                         <input class="weui-input-border" type="text" placeholder="请输入验证码">
                     </div>
                     <div class="weui-cell__hd">
-                        <button type="button" class="weui-btn weui-btn_mini weui-btn_gray get-code">发送验证码</button>
+                        <button type="button" class="weui-btn weui-btn_mini weui-btn_blue get-code">发送验证码</button>
                     </div>
                 </div>
                 <div class="weui-cell">
@@ -82,11 +82,11 @@
         function countdown(num) {
             if (num > 0) {
                 num--;
-                $(".get-code").text("重新发送(" + num + ")").removeClass("btn-primary");
+                $(".get-code").text("重新发送(" + num + ")").removeClass("weui-btn_gray");
             } else {
                 clearTimeout(timer);
                 timer = 0;
-                $(".get-code").text("获取验证码").addClass("btn-primary");
+                $(".get-code").text("发送验证码").addClass("weui-btn_blue");
                 return;
             }
 

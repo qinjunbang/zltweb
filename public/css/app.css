@@ -78,6 +78,9 @@
 .weui-btn_blue {
     background-color: #3b95e3;
 }
+.weui-btn_blue:active {
+    background-color: #0d6dbf;
+}
 .weui-btn_gray {
     background-color: #bfbfbf;
 }
