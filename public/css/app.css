@@ -1,0 +1,203 @@
+/*字体*/
+.f12 {
+    font-size: 12px;
+}
+.f14 {
+    font-size: 14px;
+}
+.f16 {
+    font-size: 16px;
+}
+.f18 {
+    font-size: 18px;
+}
+.f20 {
+    font-size: 20px;
+}
+.f22 {
+    font-size: 22px;
+}
+.f24 {
+    font-size: 24px;
+}
+.f28 {
+    font-size: 28px;
+}
+/*颜色*/
+.white {
+    color: #fff;
+}
+
+.wechat-green {
+    color: #3bca3b;
+}
+.qq-blue {
+    color: #3b95e3;
+}
+.weibo-red {
+    color: #e53939;
+}
+/*外边距*/
+.mr-10 {
+    margin-right: 10px;
+}
+/*边框*/
+.no-border {
+    border: 0 none;
+}
+.no-border:before {
+    border: 0 none;
+}
+.no-border:after {
+    border: 0 none;
+}
+/*图片缩放*/
+.img-responsive {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+/*文字居中*/
+.text-center {
+    text-align: center;
+}
+/*浮动*/
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+/*字体图标必须样式*/
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.weui-btn_blue {
+    background-color: #3b95e3;
+}
+.weui-btn_gray {
+    background-color: #bfbfbf;
+}
+.weui-cell {
+    padding: 15px;
+}
+/*导航*/
+.top-navbar {
+    padding: 13px 15px;
+    color: #fff;
+    background-color: #3b95e3;
+}
+.top-navbar:active {
+    background-color: #3b95e3;
+}
+.nav-arrow {
+    float: left;
+}
+/*登录注册表单样式*/
+#formInfo {
+    margin-top: 13%;
+}
+
+#formInfo .weui-cell:before {
+    border-top: 0;
+}
+#formInfo .weui-cell:after,
+#formInfo .weui-cells:after {
+    border-bottom: 0;
+}
+#formInfo .weui-input {
+    border-bottom: 2px solid #eee;
+}
+#formInfo input::-webkit-input-placeholder { /* WebKit browsers */
+    font-size:14px;
+}
+#formInfo input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size:14px;
+}
+#formInfo input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size:14px;
+}
+#formInfo input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-size:14px;
+}
+.login-content #formInfo input::-webkit-input-placeholder {
+    color: #d7d7d7;
+}
+.login-content #formInfo input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #d7d7d7;
+}
+.login-content #formInfo input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #d7d7d7;
+}
+.login-content #formInfo input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #d7d7d7;
+}
+#formInfo .weui-input-border {
+    width: 85%;
+    height: 34px;
+    border: 1px solid #eee;
+    padding: 0 10px;
+}
+#formInfo .get-code {
+    height: 34px;
+}
+#formInfo .weui-label {
+    display: flex;
+    width: 95px;
+    line-height: 28px;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.lgoin-header {
+    margin-top: 30%;
+}
+.lgoin-header .logo {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto;
+    background-color: #3b95e3;
+}
+.login-content {
+    background: #3b95e3 url(../img/login-bg.jpg) no-repeat 0 0/100%;
+    height: 100%;
+    padding-bottom: 30px;
+
+}
+.login-content .weui-cells {
+    background: none;
+    margin-top: 15%;
+}
+.login-content .other {
+    padding: 0 15px;
+}
+.login-content .other  a {
+    color: #fff;
+    font-size: 16px;
+}
+.login-content #formInfo .weui-input {
+    border-bottom: 1px solid #7bbaf0;
+}
+.login-content .btn-login {
+    color: #333;
+    background-color: #fff;
+}
+.login-content .btn-login:active {
+    background-color: #eee;
+}
+.login-content .other-login {
+    margin-top: 20px;
+}
+.login-content .other-login .weui-flex__item {
+    margin-top: 15px;
+}
+.login-content .other-login .round {
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 2.3rem;
+    margin: 10px auto;
+}

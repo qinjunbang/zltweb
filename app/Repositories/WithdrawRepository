@@ -1,0 +1,78 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: jinjialei
+ * Date: 2017/6/22
+ * Time: 下午1:26
+ */
+
+namespace App\Repositories;
+
+use App\Models\WithdrawBill;
+use Auth;
+use App\Models\User;
+
+class WithdrawRepository{
+
+	/**
+     * 
+     * 提交订单
+     * @param array $attributes
+     * @return code
+     */
+    public function SubmitOrder($data){
+
+        return WithdrawBill::create($data);
+    }
+
+
+     /**
+     * 查询订单
+     *
+     * @param null $id
+     *
+     * @return array
+     */
+    public function inquireUser($id = NULL)
+    {
+        return  $this -> getAllUser();
+    }
+
+     /**
+     * 获取所有提现数据
+     *
+     * @param null $id
+     *
+     * @return array
+     */
+    public function getAllUser($id = NULL)
+    {
+        $builder = User::select('id','mobile','name','created_at')->orderBy('created_at','desc');
+        
+        !empty($_GET['param']) && $builder = $this->setParam($builder,$_GET['param']);
+        !empty($this->page) && $builder = $this->returnDataAndPage($builder->paginate($this->page));
+        return $builder;
+    }
+
+
+
+
+
+
+
+
+
+
+	/**
+     * 将消费记录保存到消费记录中
+     * @param  $uid
+     * @return $data
+     */
+    public function SaveRecord( $uid){
+        $order = WithdrawBill::where('mobile', $uid)->orderBy('updated_at', 'DESC');
+
+        return $order->get();
+    }
+
+
+}
